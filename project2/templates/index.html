@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="/static/styles.css" rel="stylesheet" />
+
+    <title>Home Page</title>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body class="body-border">
+    <div class="galaxy-fold-open-your-device" style="display: none"></div>
+    <div>
+      <h1 class="header">
+        <img
+          class="header-icon"
+          src="/static/images/icons8-bulldog-64.png"
+          alt="..."
+        />NORTHWEST AMERICAN BULLDOGS
+      </h1>
+      <a class="contact-link d" href="/contact">E-mail Us</a>
+      <nav class="navbar navbar-expand-md" id="nav-index">
+        <div
+          class="btn-group flex-wrap"
+          role="group"
+          aria-label="Basic outlined example"
+        >
+          <button type="button" class="btn btn-outline-secondary fold">
+            <a class="nav-link" href="/">Home</a>
+          </button>
+          <button type="button" class="btn btn-outline-secondary fold">
+            <a class="nav-link" href="/puppies">Puppies</a>
+          </button>
+          <button type="button" class="btn btn-outline-secondary fold">
+            <a class="nav-link" href="/parents">Parents</a>
+          </button>
+          <button type="button" class="btn btn-outline-secondary fold">
+            <a class="nav-link" href="/about">About Us</a>
+          </button>
+          <button type="button" class="btn btn-outline-secondary fold">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </button>
+        </div>
+      </nav>
+      <div class="grid-container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide grid-item grid-item1"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/static/images/fatima-carmela.jpeg"
+                class="d-block w-100 image"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/static/images/vivian.jpeg"
+                class="d-block w-100 image"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/static/images/nicole.jpeg"
+                class="d-block w-100 image"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="grid-item2 text-center">
+          <h2>
+            <b
+              >American Bulldogs
+              <a
+                id="wiki-link"
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/American_Bulldog"
+                >(from Wikipedia)</a
+              ></b
+            >
+          </h2>
+          <p>
+            The American Bulldog is a large, muscular breed of working dog that
+            were used as stock dogs, catch dogs, and guardians on farms and
+            ranches. They are descended from the Old English Bulldog, which is
+            thought to have arrived in America as early as the 17th century,
+            brought over by working-class immigrants from England.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-center h3-header">Apperance:</h3>
+        <p class="about-text font">
+          &nbsp &nbsp The American Bulldog is a stocky, well-built,
+          strong-looking dog, with a large head and a muscular build. The
+          shoulders and chest tend to be the most muscular parts of the American
+          Bulldog. Its coat is short and generally smooth, requiring little
+          maintenance except a bath every few weeks. The breed is a light to
+          moderate shedder. Colors, while historically predominantly white with
+          patches of red, black, or brindle, have grown in recent years to
+          include many color patterns including black, red, brown, fawn, and all
+          shades of brindle. Black pigmentation on the nose and eye rims is
+          traditionally preferred, with only some pink allowed. Eye color is
+          usually brown, but heterochromia also occurs, although this is also
+          considered a cosmetic fault. American Bulldogs are known to drool more
+          than other breeds of dog. The Bully type is generally a larger,
+          heavier dog with a shorter muzzle, but the muzzle should never be so
+          short that it causes difficulty with breathing. Standard types are
+          generally more athletic with longer muzzles and a more square head.
+          Many modern American Bulldogs are a combination of the two types,
+          usually termed "hybrid." In general, American Bulldogs weigh between
+          27 and 54 kg (60 to 120 lb) and are 52 to 70 cm (20 to 28 in) at the
+          withers, but have been known to greatly exceed these dimensions,
+          especially in the "out of standard," nonworking stock.
+        </p>
+        <h3 class="text-center h3-header">Temperment and Characteristics:</h3>
+        <p class="about-text font">
+          &nbsp &nbsp American Bulldogs are typically confident, social,
+          ebullient and lively dogs that are at ease with their families. They
+          bond strongly with their owners, and are happiest when their masters
+          can shower them with time and attention. They are not as friendly,
+          however, with people they do not know: their ancestors were farm dogs
+          who guarded the home, the livestock, and the kids when their master
+          was away. They mature later than many other breeds, not until the age
+          of two, and as puppies they will be curious yet aloof with strangers,
+          but confident at maturity.<br />
+
+          &nbsp &nbsp Socialization of this breed is paramount: this breed
+          should never be left alone, bored, in a house or garage day after day,
+          as it may become chronically fearful and aggressive towards things it
+          does not know or understand. This is a large breed that must not
+          become a frog in a well that only knows its home territory and it must
+          be trained out of the dog immediately if the dog is obtained past the
+          age of 18 months.<br />
+
+          &nbsp &nbsp American Bulldogs are a known breed that will destroy
+          furniture and shoes if they are not given enough to do and this is yet
+          another reason too much isolation is disastrous for this breed. Fear-
+          or aggression-causing triggers can include other dogs, children it
+          does not know, postal workers, and strangers. An American Bulldog does
+          not trust anyone at first sight and must learn from its master what is
+          a threat and what is not, and a dog of this breed must learn when to
+          be territorial and when everything is okay. In this facet its
+          temperament is similar to other longer established and better-known
+          utility breeds used for livestock guarding, like the Rottweiler,
+          itself a German type of "bulldog"; another name for the breed being
+          "Rottweiler Metzgerhund," or "butcher's dog from Rottweil".<span
+            id="dots"
+            >...</span
+          ><br />
+
+          <span id="more"
+            >&nbsp &nbsp With children, socialization from the time the dog is
+            brought home is a must. True aggression towards babies and young
+            children is rare and not characteristic of how the breed is meant to
+            behave at all-this is a breed that ordinarily likes children; so
+            long as it has had time to get to know them well it is more likely
+            to play with the kids than hurt them. In fact, this breed can be
+            very tolerant of a child's grabby hands that tug on its ears and can
+            be a very devoted fellow mischief maker to the young ones in his
+            family; the American Bulldog has a playful, impish streak when
+            well-raised, well-bred, well-loved. and well-rounded. Owners of this
+            breed ideally will understand that this is a high-octane, powerful,
+            headstrong breed and they shall be very careful to set limitations
+            and rules for their dog and reinforce obedience training throughout
+            the dog's life. They will not be first-time owners of a dog and
+            shall be firm, but fair – harsh and violent methods will not work in
+            training this breed, as it will only backfire and make the dog shut
+            down, stubbornly refusing to listen to any further commands and
+            making it angrier and angrier. They will have access to places where
+            the dog can exercise and run, but the owner will not take off the
+            leash unless an area is enclosed with a high fence.<br />
+
+            &nbsp &nbsp Unlike most other bulldog breeds, they are competent
+            swimmers. That said, they do not have the affinity for water a
+            retriever would: they swim if they have to do it, not because they
+            particularly enjoy it. They are capable of jumping in excess of 3
+            feet (0.91 m) vertically due to the dense muscle build of the breed
+            and they love to run, jump, tackle and cavort. Lively, muddy games
+            of rugby, Frisbee, American football, or lacrosse are
+            rough-and-tumble games that this breed would adore, since it loves
+            to roughhouse and will be thrilled to be included in a game with the
+            children or help a teenager practice for the big game. A tall fence
+            is a must to keep an American Bulldog from wandering off on an
+            adventure and forgetting how to get home, so a microchip is highly
+            recommended. Young American Bulldogs under the age of three years in
+            particular love to bounce around and may accidentally knock over a
+            toddler, a senior citizen, or a small child, so handling this breed
+            on a leash is not recommended if one is a small child or an elderly
+            adult, since the breed loves to pull and tug and may run away with
+            those not strong enough to hold it.<br />
+
+            &nbsp &nbsp They can do well with other dogs in the household or who
+            visit regularly when properly introduced and supervised, preferably
+            on neutral ground for the first few meetings so the American Bulldog
+            in question can learn that this new dog has come to play, not to
+            hurt his beloved family and home. They are not necessarily good with
+            strange dogs, especially in chaotic environments like the dog park.
+            The more exposure to good training practices and clear behavior
+            expectations with other dogs and people, the more likely the success
+            at being controlled both inside and outside of their environment and
+            the natural physically strong and powerful nature of the breed can
+            be channeled positively.<br />
+
+            &nbsp &nbsp Ongoing training both in the home and outside of the
+            home is essential for this breed. While the goal of the breed was
+            originally to produce a working farm utility dog that could catch
+            and hold wild boar and cattle, kill vermin, and guard an owner's
+            property, when properly trained, exercised, and socialized, this
+            breed can become a very loyal, clownish family pet who loves to play
+            and join the family on outings.<br />
+
+            &nbsp &nbsp It also doubles as a fine boarhound, and in its homeland
+            it is often both a pet and a hunter at the same time: Southern
+            Americans prize this breed as a courageous canine warrior in a
+            Kevlar vest that will pin down an angry feral hog and defend the
+            customary pack of hounds and the gunman from the hog's tusks.
+            However, they also prize the breed having a soft, affectionate inner
+            nature that can easily transition away from the hunt to a nice warm
+            bath, a round of playing with the children, and have a well earned
+            nap on its bed after getting a belly full of the barbecued wild hog
+            ribs as a treasured member of the family. As a working breed, they
+            are good on pigs as catch dogs and decent on cattle: they stand
+            their ground when challenged by an angry steer and still retain the
+            herding instinct. Overall, the American Bulldog is a breed that
+            truly falls in love with his family and will do anything to keep it
+            safe if the dog correctly senses danger up to, and including,
+            risking its life to save them.</span
+          ><button onclick="myFunction()" id="myBtn">Read more</button>
+        </p>
+        <h3 class="text-center h3-header">Health:</h3>
+        <p class="about-text">
+          &nbsp &nbsp American Bulldogs generally live from 10 to 16 years, and
+          tend to be strong, physically active, and often healthy. Some health
+          problems in American bulldogs are often found within certain genetic
+          lines, and are not common to the entire breed, while others, such as
+          neuronal ceroid lipofuscinosis (NCL), Ichthyosis, disorders of the
+          kidney and thyroid, ACL tears, hip dysplasia, cherry eye, elbow
+          dysplasia, entropion, ectropion, and bone cancer are more common to
+          the general population of American Bulldogs. There are DNA tests
+          available to help breeders screen breeding animals for NCL (neuronal
+          ceroid lipofuscinosis) and Ichthyosis. A Penn Hip (Pennsylvania Hip
+          Improvement project) or OFA (Orthopedic Foundation for Animals)
+          screening is recommended for all potential breeding animals. Some
+          American Bulldogs are prone to allergies. Due to the ideal of beauty
+          regarding the shape of the face the skull malformation brachycephaly
+          was increased by breeding selection.
+        </p>
+      </div>
+    </div>
+    <footer class="footer text-center">
+      <address class="address">
+        <h4>NORTHWEST AMERICAN BULLDOGS</h4>
+        <br /><br />
+        <p>260 SE Brookwood Ave</p>
+        <p>Hillsboro, Or 97123</p>
+        <br />
+        <p>503-442-9217</p>
+        <br />
+        <a href="/contact">correojody@hotmail.com</a><br /><br />
+        <a class="foot-links" href="/">Home</a
+        ><a class="foot-links" href="/puppies">Puppies</a
+        ><a class="foot-links" href="/parents">Parents</a
+        ><a class="foot-links" href="/about">About Us</a
+        ><a class="foot-links" href="/contact">Contact Us</a>
+      </address>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* css for header*/
+.header {
+  text-align: center;
+  color: #011e52;
+}
+
+.header-icon {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+/* css for tables parent/puppies */
+.table {
+  border: 1vw solid lightgray;
+}
+
+.table-header {
+  background-color: lightgray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* css for footer */
+.address {
+  background-color: #262626;
+  color: white;
+  padding: 2vw 0 2vw 0;
+}
+
+.foot-links {
+  margin-left: 3ch;
+  font-size: 2vw;
+}
+
+footer {
+  border: 2px solid #dae0e8;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.body-border {
+  border-top: 10px solid #403f3f;
+  border-left: 5px solid #403f3f;
+  border-right: 5px solid #403f3f;
+  background-image: radial-gradient(circle, #abb7cc, #7b8494, #434a57);
+}
+
+#nav-index {
+  background-color: #262626;
+}
+
+/* css for carousel pics and container */
+.carousel {
+  width: 100%;
+}
+
+.image {
+  max-width: 100%;
+  height: 30vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #3d3d3d;
+  padding: 10px;
+  grid-gap: 15px;
+}
+
+.grid-item2 {
+  grid-column: span 2;
+  font-size: 30px;
+  background-color: #4061f5;
+  opacity: 0.5;
+  color: white;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#wiki-link {
+  color: black;
+}
+
+/* css for card photo on puppies page */
+.grid-container-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #3d3d3d;
+  padding: 10px;
+  grid-gap: 15px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: 25vw;
+  border: 2px solid black;
+}
+
+.grid-item {
+  background-color: #4f4e4e;
+  color: white;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+/* @media (max-width: 280px) {
+    .galaxy-fold-open-your-device {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 2147483647;
+      }
+
+      .galaxy-fold-open-your-device::after {
+        content: 'Please unfold your phone';
+        display: block;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+} */
+
+/* css for email us button */
+.d:link,
+.d:visited {
+  background-color: #4f4e4e;
+  color: black;
+  border: 2px solid #4f4e4e;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.d:hover,
+.d:active {
+  background-color: #4061f5;
+  color: white;
+}
+
+/* css for text on puppies page */
+#p-paragraph {
+  text-align: center;
+  font-size: 20px;
+}
+
+#p-h1 {
+  text-align: center;
+}
+
+/* css for form and contact info on contact us page */
+#form-info {
+  width: 60%;
+}
+
+#contact-info {
+  width: 35%;
+  margin-left: 10px;
+}
+
+#contact-margin {
+  margin-top: 20px;
+}
+
+.contact-info {
+  font-size: 3vw;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* css for flexbox for parents page */
+.flex-cont-par {
+  display: flex;
+  margin: 10px;
+  background-color: #403e3e;
+}
+
+.flex1 {
+  border: 2rem solid #262626;
+  flex-grow: 1;
+  width: 30vw;
+  height: 30vw;
+}
+
+.flex2 {
+  color: black;
+  background-color: lightgray;
+  flex-grow: 2;
+  align-self: center;
+  margin: 0 1rem 0 1rem;
+}
+
+.flex2 h3 {
+  background-color: #262626;
+  color: lightgray;
+}
+
+.extra img {
+  width: 12vw;
+  height: 12vw;
+  transition: width 1s, height 1s;
+}
+
+.extra img:hover {
+  width: 25vw;
+  height: 25vw;
+}
+
+/* css for form and headers on contact us page */
+form {
+  background-color: #4f4e4e;
+}
+
+.header-contact {
+  font-size: 20px;
+  background-color: #7d7a7a;
+  margin-top: 10px;
+}
+
+/* css for hero images for about us and contact us */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/images/fatima-carmela.jpeg");
+  height: 45vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 2px solid white;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 5vw;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-image-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/images/american-bulldogs2.jpg");
+  height: 45vw;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 2px solid black;
+}
+
+/* css for text blocks in all/most pages */
+.about-text {
+  background-color: #c6cccc;
+  border: 3px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.5vw;
+}
+
+.h3-header {
+  background-color: #403f3f;
+  border-bottom: 3px solid black;
+  color: white;
+  opacity: 0.6;
+}
+
+/* css for read more function in index */
+#more {
+  display: none;
+}
+
+#myBtn {
+  background-color: #403f3f;
+  color: white;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #4061f5;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #3d3d3d;
+    padding: 10px;
+    grid-gap: 12px;
+  }
+
+  .image {
+    max-width: 100%;
+    height: 55vw;
+  }
+
+  .grid-item2 {
+    font-size: 20px;
+    background-color: #4061f5;
+    opacity: 0.5;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  .grid-container-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #3d3d3d;
+    padding: 10px;
+    grid-gap: 5px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 55vw;
+  }
+
+  .about-text {
+    font-size: 4vw;
+  }
+
+  .flex1 {
+    border: 1rem solid #262626;
+  }
+
+  .foot-links {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  #contact-info {
+    width: 95%;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  #form-info {
+    width: 100%;
+  }
+
+  .flex1 {
+    border: 0.5rem solid #262626;
+  }
+
+  .grid-container-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
