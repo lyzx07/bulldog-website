@@ -6,8 +6,16 @@
 
 /* css for header*/
 .header {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
   text-align: center;
   color: #011e52;
+  font-size: 50px;
 }
 
 .header-icon {
@@ -53,14 +61,18 @@ html {
 }
 
 .body-border {
-  border-top: 10px solid #403f3f;
-  border-left: 5px solid #403f3f;
-  border-right: 5px solid #403f3f;
   background-image: radial-gradient(circle, #abb7cc, #7b8494, #434a57);
 }
 
 #nav-index {
   background-color: #262626;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 /* css for carousel pics and container */
@@ -76,7 +88,6 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #3d3d3d;
   padding: 10px;
   grid-gap: 15px;
 }
@@ -84,11 +95,23 @@ html {
 .grid-item2 {
   grid-column: span 2;
   font-size: 30px;
-  background-color: #4061f5;
-  opacity: 0.5;
-  color: white;
-  border: 2px solid black;
+  color: #011e52;
   padding: 5px;
+}
+
+.p-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.p-h2 {
+  color: white;
+  background-color: #403f3f;
+  opacity: 0.6;
+  width: 100%;
 }
 
 #wiki-link {
@@ -119,28 +142,6 @@ html {
 .card-text {
   font-size: 12px;
 }
-
-/* @media (max-width: 280px) {
-    .galaxy-fold-open-your-device {
-        display: block !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #fff;
-        z-index: 2147483647;
-      }
-
-      .galaxy-fold-open-your-device::after {
-        content: 'Please unfold your phone';
-        display: block;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-      }
-} */
 
 /* css for email us button */
 .d:link,
@@ -278,11 +279,10 @@ form {
 
 /* css for text blocks in all/most pages */
 .about-text {
-  background-color: #c6cccc;
-  border: 3px solid black;
   padding: 10px;
   margin-top: 10px;
   font-size: 1.5vw;
+  color: #011e52;
 }
 
 .h3-header {
@@ -301,6 +301,7 @@ form {
   background-color: #403f3f;
   color: white;
   border-radius: 50%;
+  padding: 10px;
 }
 
 #myBtn:hover {
