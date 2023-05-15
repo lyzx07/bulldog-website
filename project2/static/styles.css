@@ -88,7 +88,6 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
   grid-gap: 15px;
 }
 
@@ -97,6 +96,14 @@ html {
   font-size: 30px;
   color: #011e52;
   padding: 5px;
+}
+
+.custom-shape-divider-bottom-1684127970 .shape-fill {
+  fill: #403F3F;
+}
+
+.svg {
+  position: relative;
 }
 
 .p-div {
@@ -116,6 +123,10 @@ html {
 
 #wiki-link {
   color: black;
+}
+
+.about-cont {
+  margin-top: 50px;
 }
 
 /* css for card photo on puppies page */
@@ -309,6 +320,10 @@ form {
 }
 
 @media screen and (max-width: 600px) {
+  .nav-bar button, .nav-bar .email {
+    margin-top: 10px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
