@@ -28,8 +28,8 @@ else:
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'lyzx07@yahoo.com'
-app.config['MAIL_PASSWORD'] = password
+app.config['MAIL_USERNAME'] = 'lyzx07@gmail.com'
+app.config['MAIL_PASSWORD'] = 'qbldddsdmmpawmia'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -77,7 +77,7 @@ def send_email():
         zip = request.form.get("zip")
         message = request.form.get("message")
 
-        msg = Message('Hello', sender = 'lyzx07@yahoo.com', recipients = ['lyzx07@yahoo.com'])
+        msg = Message('Hello', sender = 'lyzx07@gmail.com', recipients = ['lyzx07@gmail.com'])
         msg.body = f"This is the email body \n Name: {fname} {lname} \n Email: {visitor_email} \n Phone: {phone} \n Address: {address}, {city}, {state}, {zip} \n Message: {message}"
         mail.send(msg)
         return 'Mail sent!'
