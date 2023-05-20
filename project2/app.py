@@ -17,26 +17,25 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 conn = sqlite3.connect('puppies.db', check_same_thread=False)
 c = conn.cursor()
 
-mail = Mail(app)
+password = os.environ.get('my_password')
+
+# Check if environment variable is set
+if password is None:
+    print('Environment variable not set!')
+else:
+    print('Environment variable is set!')
+
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'lyzx07@yahoo.com'
-app.config['MAIL_PASSWORD'] = 'your_password'
+app.config['MAIL_PASSWORD'] = password
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
+mail = Mail(app)
 
-@app.route('/send_email')
-def send_email():
-    try:
-        msg = Message('Hello', sender = 'your_email@gmail.com', recipients = ['recipient@example.com'])
-        msg.body = "This is the email body"
-        mail.send(msg)
-        return 'Mail sent!'
-    except Exception as e:
-        return(str(e))
-
+    
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
@@ -64,3 +63,23 @@ def parents():
 @app.route("/about", methods=["GET", "POST"])
 def about():
     return render_template("about.html")
+
+@app.route('/send_email', methods=["POST"])
+def send_email():
+    try:
+        fname = request.form.get("fname")
+        lname = request.form.get("lname")
+        visitor_email = request.form.get("email")
+        phone = request.form.get("phone")
+        address = request.form.get("address")
+        city = request.form.get("city")
+        state = request.form.get("state")
+        zip = request.form.get("zip")
+        message = request.form.get("message")
+
+        msg = Message('Hello', sender = 'lyzx07@yahoo.com', recipients = ['lyzx07@yahoo.com'])
+        msg.body = f"This is the email body \n Name: {fname} {lname} \n Email: {visitor_email} \n Phone: {phone} \n Address: {address}, {city}, {state}, {zip} \n Message: {message}"
+        mail.send(msg)
+        return 'Mail sent!'
+    except Exception as e:
+        return(str(e))

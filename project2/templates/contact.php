@@ -1,4 +1,4 @@
-{% comment %} <?php
+<?php
   if(isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
@@ -23,9 +23,9 @@
       echo "<h1>Something Went Wrong!</h1>";
     }
   }
-?> {% endcomment %}
+?>
 
-<?php
+{% comment %} <?php
 
 $name = $_POST['fname'] . ' ' . $_POST['lname'];
 $email = $_POST['email'];
@@ -41,6 +41,13 @@ $recipient = "lyzx07@yahoo.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 
+if (mail($recipient, $subject, $formcontent, $mailheader)) {
+    echo "Thank You!";
+}
+else {
+    echo "An error occurred. Please try again later.";
+}
+
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 echo "Thank You!";
-?>
+?> {% endcomment %}

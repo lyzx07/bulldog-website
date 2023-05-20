@@ -75,6 +75,15 @@ html {
   padding: 5px;
 }
 
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+
 /* css for carousel pics and container */
 .carousel {
   width: 100%;
@@ -104,6 +113,14 @@ html {
 
 .svg {
   position: relative;
+}
+
+.circle-svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 66%;
 }
 
 .p-div {
@@ -169,7 +186,7 @@ html {
 
 .d:hover,
 .d:active {
-  background-color: #4061f5;
+  background-color: #011e52;
   color: white;
 }
 
@@ -177,10 +194,12 @@ html {
 #p-paragraph {
   text-align: center;
   font-size: 20px;
+  color: #011e52;
 }
 
 #p-h1 {
   text-align: center;
+  color: white;
 }
 
 /* css for form and contact info on contact us page */
@@ -316,7 +335,7 @@ form {
 }
 
 #myBtn:hover {
-  background-color: #4061f5;
+  background-color: #011e52;
 }
 
 @media screen and (max-width: 600px) {
