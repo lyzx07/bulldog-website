@@ -20,12 +20,12 @@ c = conn.cursor()
 password = os.environ.get('my_password')
 
 # Check if environment variable is set
-if password is None:
+""" if password is None:
     print('Environment variable not set!')
 else:
     print('Environment variable is set!')
 
-
+ """
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'lyzx07@gmail.com'
